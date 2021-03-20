@@ -15,10 +15,10 @@ if name != ""
         end
     end
     if exist == false
-        puts "That coalition does not exist :s"
+        puts "ERROR: That coalition does not exist :s"
     end
 else
     result.each do |key, value|
-            puts "ID[#{key["id"]}] NAME[#{key["name"]}] SCORE[#{key["score"]}] COLOR[#{key["color"]}]"
+        puts "ID[#{key["id"]}] NAME[#{key["name"]}] SCORE[#{key["score"]}] COLOR[#{key["color"]}]"
     end
 end

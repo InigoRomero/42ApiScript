@@ -28,3 +28,19 @@ def getResult(uri)
     result = result.sort_by { |hash| hash['id'].to_i }
     return result
 end
+
+def getCampusID()
+    print "Campus name(EMPTY FOR ALL): "
+    name = gets.chomp
+    
+    response = getToken().get("/v2/campus", params: {page: {size: 100, number: 1},filter: {name: name}}).parsed
+    return response
+end
+
+def getLoginID()
+    print "Login: "
+    login = gets.chomp
+    
+    response = getToken().get("/v2/users", params: {page: {size: 100, number: 1},filter: {login: login}}).parsed
+    return response
+end
