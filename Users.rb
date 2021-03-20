@@ -1,10 +1,7 @@
-require "oauth2"
-require "dotenv"
+#Users.rb
+load "helper.rb"
 
-config = File.absolute_path(File.join(File.expand_path(".env"), '..', '.env'))
-Dotenv.load(config)
-client = OAuth2::Client.new(ENV['UID'], ENV['SECRET'], site: "https://api.intra.42.fr")
-token = client.client_credentials.get_token
+token = getToken()
 
 result = []
 i = 1
