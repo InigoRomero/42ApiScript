@@ -31,6 +31,20 @@ CURSUSID=9
 ```shell
 ruby NAME_RB
 ```
+# Features
+* Pedago
+    * [EventsOfUser](/pedago/EventsOfUser.rb) Get all the EVENTS os user giving the Login
+    * [userOnPiscine](/pedago/userOnPiscine.rb) Get all USERS on specific piscine of a campus
+    * [UsersOfEvents](/pedago/UsersOfEvents.rb) Get all USERS on specific events
+* getID
+    * [CampusID](/getID/CampusID.rb) Get ID of a CAMPUS giving him name
+    * [CoalitionID](/getID/CoalitionID.rb) Get ID of a COALITION giving him name
+    * [LoginID](/getID/LoginID.rb) Get ID of a USER giving the login
+* Others
+    * [allCursus](allCursus.rb) Get all the cursus on 42 network
+    * [AllUsers](AllUsers.rb) Get all the users on your Campus
+    * [Store42](/Store42.rb) get the Products and prize of the store
+    * [Title](/Title.rb)  Get all the titles on 42 network
 
 Any kind of support is appreciated: iromero- :) <br>
 Please feel free to contribute to the repo
