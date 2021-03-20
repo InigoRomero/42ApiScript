@@ -4,11 +4,11 @@ load "helper.rb"
 token = getToken()
 
 result = []
-i = 1
+i = 0
 
 loop do
     i = i + 1
-    response = token.get("/v2/titles", params: {page: {number: i}})
+    response = token.get("/v2/titles", params: {page: {size: 100,number: i}})
     result += response.parsed
     sleep(0.25)
     if response.parsed == []
