@@ -1,5 +1,5 @@
 #CampusID.rb
-#Get ID and other of Campus
+#Get ID and data of Campus
 load "helper.rb"
 
 print "Campus name(EMPTY FOR ALL): "
@@ -7,7 +7,7 @@ name = gets.chomp
 
 response = getToken().get("/v2/campus", params: {page: {size: 100, number: 1},filter: {name: name}}).parsed
 
-if (response.count < 0)
+if (response.count == 0)
     puts "It seems that this campus does not belong to the network O_O [try just writing the name of the city where the campus is, without 42 in the name]"
 elsif (response.count <= 99)
     response.each do |key, value|
