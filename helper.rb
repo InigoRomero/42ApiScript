@@ -20,10 +20,10 @@ def getResult(uri)
         i = i + 1
         response = token.get(uri, params: {page: {size: 100, number: i}})
         result += response.parsed
-        sleep(0.25)
         if response.parsed == []
             break
         end
+        sleep(0.25)
     end
     result = result.sort_by { |hash| hash['id'].to_i }
     return result

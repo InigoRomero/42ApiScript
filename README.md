@@ -1,6 +1,6 @@
 # 42ApiScript
 #### Welcome
-Ruby Scripts with calls to the api of 42 useful, thinking to facilitate the work of educators in the pools and more
+Ruby Scripts with calls to the api of 42 useful, thinking to facilitate the work of educators in the piscine and students
 # installation macOS
 #### Install ruby
 ```shell
@@ -25,6 +25,7 @@ SECRET=YOUR_SECRET
 CAMPUSID=YOUR_CAMPUS_ID
 MEID=YOUR_ID
 MYCOALITIONID=COALITION_ID
+CURSUSID=9
 ```
 # Usage
 ```shell
