@@ -3,9 +3,28 @@
 require "oauth2"
 require "dotenv"
 
+config = File.absolute_path(File.join(File.expand_path(".env"), '..', '.env'))
+Dotenv.load(config)
+
 def getToken()
-    config = File.absolute_path(File.join(File.expand_path(".env"), '..', '.env'))
-    Dotenv.load(config)
     client = OAuth2::Client.new(ENV['UID'], ENV['SECRET'], site: "https://api.intra.42.fr")
     return client.client_credentials.get_token
+end
+
+def getResult(uri)
+    token = getToken()
+
+    result = []
+    i = 0
+    loop do
+        i = i + 1
+        response = token.get(uri, params: {page: {size: 100, number: i}})
+        result += response.parsed
+        sleep(0.25)
+        if response.parsed == []
+            break
+        end
+    end
+    result = result.sort_by { |hash| hash['id'].to_i }
+    return result
 end

@@ -14,17 +14,8 @@ elsif (response.count <= 99)
         puts "ID[#{key["id"]}] NAME[#{key["name"]}] CITY[#{key["city"]}] USERS_COUNT[#{key["users_count"]}]"
     end
 elsif (response.count == 100)
-    i = 1
-    loop do
-        i = i + 1
-        response = token.get("/v2/campus", params: {page: {size: 100, number: i}})
-        result += response.parsed
-        sleep(0.25)
-        if response.parsed == []
-            break
-        end
-    end
-    result = result.sort_by { |hash| hash['id'].to_i }
+    sleep(0.25)
+    result = getResult("/v2/campus");
     result.each do |key, value|
         puts "ID[#{key["id"]}] NAME[#{key["name"]}] CITY[#{key["city"]}] USERS_COUNT[#{key["users_count"]}]"
     end
