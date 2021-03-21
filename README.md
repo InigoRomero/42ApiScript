@@ -34,7 +34,7 @@ ruby NAME_RB
 # Features
 * Pedago
     * [EventsOfUser](/pedago/EventsOfUser.rb) Get all the EVENTS os user giving the Login
-    * [Projects](/pedago/Projects.rb) By giving a login you will be able to see their projects, notes and status. Also if you give a name of a project you can check if it is registered
+    * [Projects](/pedago/Projects.rb) By giving a login you will be able to see their projects, Marks and status. Also if you give a name of a project you can check if it is registered
     * [userOnPiscine](/pedago/userOnPiscine.rb) Get all USERS on specific piscine of a campus
     * [UsersOfEvents](/pedago/UsersOfEvents.rb) Get all USERS on specific events
 * getID
