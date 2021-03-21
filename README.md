@@ -34,6 +34,7 @@ ruby NAME_RB
 # Features
 * Pedago
     * [EventsOfUser](/pedago/EventsOfUser.rb) Get all the EVENTS os user giving the Login
+    * [Projects](/pedago/Projects.rb) By giving a login you will be able to see their projects, notes and status. Also if you give a name of a project you can check if it is registered
     * [userOnPiscine](/pedago/userOnPiscine.rb) Get all USERS on specific piscine of a campus
     * [UsersOfEvents](/pedago/UsersOfEvents.rb) Get all USERS on specific events
 * getID
@@ -46,5 +47,6 @@ ruby NAME_RB
     * [Store42](/Store42.rb) get the Products and prize of the store
     * [Title](/Title.rb)  Get all the titles on 42 network
 
+Documentation: [42 API](https://api.intra.42.fr/apidoc)
 Any kind of support is appreciated: iromero- :) <br>
 Please feel free to contribute to the repo
