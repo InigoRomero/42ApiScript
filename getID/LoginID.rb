@@ -1,6 +1,6 @@
 #LoginID.rb
 #Get ID with the login
-load "helper.rb"
+load "../helper.rb"
 
 response = getLoginID()
 if response.count == 0

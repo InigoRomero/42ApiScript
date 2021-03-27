@@ -1,6 +1,6 @@
 #EventsOfUser.rb
 #show if a user is registered on a EVENT
-load "helper.rb"
+load "../helper.rb"
 
 print "Event Name: "
 name = gets.chomp

@@ -1,6 +1,6 @@
 #CampusID.rb
 #Get ID and data of Campus
-load "helper.rb"
+load "../helper.rb"
 
 response = getCampusID()
 if response.count == 0

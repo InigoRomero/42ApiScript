@@ -1,6 +1,6 @@
 #Projects.rb
 #Giving the login show all the project or check specific project
-load "helper.rb"
+load "../helper.rb"
 
 user = getLoginID()
 print "Project Name(EMPTY FOR ALL): "

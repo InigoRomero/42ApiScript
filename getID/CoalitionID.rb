@@ -1,6 +1,6 @@
 #Coalition.rb
 #Get ID and data of Coalation
-load "helper.rb"
+load "../helper.rb"
 
 print "Coalition name(EMPTY FOR ALL): "
 name = gets.chomp

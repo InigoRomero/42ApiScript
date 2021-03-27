@@ -1,6 +1,6 @@
 #isRegistered.rb
 #show users of a piscine
-load "helper.rb"
+load "../helper.rb"
 
 print "pool year: "
 year = gets.chomp
